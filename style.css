@@ -1,0 +1,154 @@
+*{
+    margin-top: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Segoe UI;
+}
+
+
+/*Common CSS*/
+.container-fluid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-color: yellow;*/
+}
+.container{
+    max-width: 1150px;
+    width: 100%;
+    /*height: 400px;*/
+    /*background-color: rgb(247, 5, 5);*/
+
+}
+
+/* header section */
+.header-container{
+    height: 60px;
+   /* background-color: rgb(218, 235, 70);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid black ;
+    padding: 8px;
+
+}
+.logo{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(231,72,13);
+}
+button{
+    padding:12px 40px;
+    background-color: turquoise;
+    border: 1px solid turquoise;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+/*Product section*/
+.product{
+    margin-top: 50px;
+}
+.pro-container{
+    padding: 20px 0px;
+    /*background-color: yellow;*/
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8%;
+    row-gap: 30px;
+}
+.item{
+    width: 28%;
+    height: 400px;
+   /* background-color: red;*/
+    box-shadow:rgba(0,0,0,0.35) 5px 10px 15px;
+}
+.pro-img{
+    height: 300px;
+   /* background-color: green;*/
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-img > img{
+    width: 50%;
+}
+.pro-info{
+    padding: 10px 20px;
+}
+.pro-info>h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #1e1e1e;
+}
+.pro-info>h4{
+    font-size: 20px;
+    color: #3b3b3b;
+    margin-bottom: 5px;
+}
+
+
+/*filter Box CSS*/
+.filter-box{
+    height:100vh;
+    width:30%;
+    background-color: rgb(253, 251, 251);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    margin-left: -30%;
+    transition: 3s;
+    padding: 20px 40px;
+    box-shadow: rgba(0,0,0,0.35) 5px 10px 15px;
+    box-sizing: border-box;
+}
+.filter-pro>h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.inp>label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    outline: none;
+}
+select{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.minMaxPrice{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom:30px ;
+}
+.minMaxPrice>div{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.filter-pro>button{
+    width: 100%;
+}

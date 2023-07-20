@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fashion Project</title>
+</head>
+<body>
+    <header class="container-fluid header">
+        <div class="container header-container">
+            <div class="logo">
+                Fashion
+            </div>
+            <button onclick="openFilter()">Filter</button>
+        </div>
+    </header>
+
+
+    <!--Product Section-->
+    <section class="container-fluid product">
+         <div class="container pro-container" id="data">
+          <!--  <div class="item">
+                    <div class="pro-img">
+                        <img src="s-hlts002919-highlander-original-imagzdx7zhwxvya5.webp">
+                    </div>
+                    <div class="pro-info">
+                         <h3>Pack of 2 Men Printe</h3>
+                        <h4>299₹</h4>
+                    </div>
+                 </div>   
+         </div>-->
+    </section>
+
+    <!--Filter Box -->
+    
+    <div class="filter-box" id="filter-box">
+        <div class="filter-pro">
+            <h2>Filter</h2>
+            <div class="inp">
+                <label>Search Product Name</label>
+                <input type="text" placeholder="Search product name" onkeyup=" setFilter('product_name',this.value), filterData()">
+            </div>
+            <div class="inp">
+                <label>Select Category</label>
+                <select onchange=" setFilter('category',this.value), filterData()">
+                    <option value="">Select Category</option>
+                    <option value="Formal Shirt">Formal Shirt</option>
+                    <option value="t-shirt">t-shirt</option>
+                    <option value="Jeans">Jeans</option>
+                    <option value="Shorts">Shorts</option>
+                </select>
+            </div>
+            <div class="inp">
+                <label>Enter Min & Max Price</label>
+                <div class="minMaxPrice">
+                    <div>
+                        Min Price
+                        <input type="number" onkeyup="setFilter('minPrice',this.value),filterData()">
+                    </div>
+                    <div>
+                        Max Price
+                        <input type="number" onkeyup="setFilter('mixPrice', this.value),filterData()">
+                    </div>
+                </div>
+            </div>
+            <button onclick="openFilter()">Filter</button>
+            <br>
+            <br>
+            <button onclick="openFilter()">Close Filter</button>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
